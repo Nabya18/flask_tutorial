@@ -16,7 +16,7 @@ information
 ---
 6. request.form["nm"] based on login.html
 7. A session is used to store information related to a user, across different requests, as they interact with a web app.
-8. To avoid error in message Flashing we need make app.secret_key.
+8. To avoid error in session we need make app.secret_key.
    - SECRET_KEY is used in almost all extensions where there is something security related and IIRC you can't start an app in debug mode without it.
 9. session.pop to remove data from browser.
 10. If session.permanent is true, the cookie’s expiration will be set this number of seconds in the future. Can either be a datetime.timedelta or an int.
