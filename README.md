@@ -8,3 +8,10 @@ Notes:
 3. render_template() is a function within the Flask web framework used to render HTML templates for display in a web browser.
     - You have to make templates directory
 4. Bootstrap inheritance in Flask applications refers to the combination of Jinja2 template inheritance with the styling and components provided by the Bootstrap framework.
+5. Send information
+---
+{% block content %}
+information
+{% endblock %}
+---
+6. request.form["nm"] based on login.html
