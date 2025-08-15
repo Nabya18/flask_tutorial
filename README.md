@@ -20,3 +20,8 @@ information
    - SECRET_KEY is used in almost all extensions where there is something security related and IIRC you can't start an app in debug mode without it.
 9. session.pop to remove data from browser.
 10. If session.permanent is true, the cookie’s expiration will be set this number of seconds in the future. Can either be a datetime.timedelta or an int.
+11. How to deploy a Flask App to docker
+    - docker build -t [username_dockerhub]/[name_docker]:[version] .
+    - docker container run -d -p [port:port] [username_dockerhub]/[name_docker]:[version]
+    - docker login
+    - docker push [username_dockerhub]/[name_docker]:[version]
